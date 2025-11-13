@@ -23,5 +23,8 @@ urlpatterns = [
     path('herencia/', views.herencia, name="herencia"),
     path('ejemplo/', views.ejemplo, name="ejemplo"),
     path('otra/', views.otra, name="otra"),
-    path('', views.index, name="index")
+    path('', views.index, name="index"),
+    path('foto/', views.foto, name="foto"),
+    path('foto/portfolio/', views.portfolio, name="portfolio"),
+    path('foto/about/', views.about, name="about")
 ]

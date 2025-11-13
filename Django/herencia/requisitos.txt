@@ -1,0 +1,7 @@
+- Seccion Index:
+    - Imágen con logotipo y texto de información
+
+- Listar serie de imágenes que podrían formar parte deun porfolio (como si fuesemos fotografo)
+    - seccion 1 presentarnos
+    - secccion 2 nuestras mejores fotos
+
