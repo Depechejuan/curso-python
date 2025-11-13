@@ -9,13 +9,30 @@
         <h1>Hola {{name}}</h1>
         <h3>Categorias</h3>
         <ul>
+            {# Esto es un comentario en la plantilla #}
+            {# No se representa en el HTML, es un comentario privado #}
+
+            {% comment %}
+            Recorremos las categorías y las pintamos
+            En caso de ser 'code', la categoría se pinta en negrita
+            {% endcomment %}
+
+
             {% for category in categories %}
                 {% if category == 'code' %}
-                    <li><b>{{ category }}</b></li>
+                    <li><b>{{ category|upper }}</b></li>
                 {%else%}
                     <li>{{ category }}</li>
                 {%endif%}
             {% endfor %}
+
+
+            {% comment %}
+            Este comentario es
+            multilinea
+            {% endcomment %}
+
+            <h5>Total de Categorías:  {{categories|length}}</h5>
         </ul>
     </body>
 </html>
