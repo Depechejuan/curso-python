@@ -17,7 +17,6 @@ class Entry(models.Model):
     public_date = models.DateField(default=date.today)
     rating = models.IntegerField(default=5)
 
-
     def __str__(self):
         return self.headline
 
