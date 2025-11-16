@@ -12,12 +12,3 @@ def ejemplo(req):
 def otra(req):
     return render(req, 'otra.html', {})
 
-
-def foto(req):
-    return render(req, 'foto.html', {})
-
-def portfolio(req):
-    return render(req, 'portfolio.html', {})
-
-def about(req):
-    return render(req, 'about.html', {})

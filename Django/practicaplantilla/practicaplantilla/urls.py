@@ -1,5 +1,5 @@
 """
-URL configuration for herencia project.
+URL configuration for practicaplantilla project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -20,9 +20,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('herencia/', views.herencia, name="herencia"),
-    path('ejemplo/', views.ejemplo, name="ejemplo"),
-    path('otra/', views.otra, name="otra"),
-    path('', views.index, name="index"),
-
+    path('', views.foto, name="index"),
+    path('portfolio/', views.portfolio, name="portfolio"),
+    path('about/', views.about, name="about")
 ]

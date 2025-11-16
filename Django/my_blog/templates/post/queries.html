@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Queries</title>
+    </head>
+    <body>
+
+        <h3>Buscando autor donde email = michael39@example.com</h3>
+        <ul>
+            {%for auth in filtered%}
+                <li>{{auth.name}} ({{auth.email}})</li>
+            {%endfor%}
+        </ul>
+
+        <h3>Usando GET, id = 1</h3>
+        <p>{{author.name}} ({{author.email}})</p>
+
+        <h3>Mostrando los 10 primeros con LIMIT</h3>
+            <ul>
+            {% for author in limit %}
+                <li>{{author.name}} ( {{author.email}})</li>
+            {%endfor%}
+        </ul>
+
+        <h3>Elementos ordenados por email</h3>
+            <ul>
+            {% for author in orders %}
+                <li>{{author.email}}</li>
+            {%endfor%}
+        </ul>
+
+        <h3>Todos los autores</h3>
+        <ul>
+            {% for author in authors %}
+                <li>{{author.name}} ( {{author.email}})</li>
+            {%endfor%}
+        </ul>
+
+        <h3>Total de autores: {{ authors|length }}</h3>
+    </body>
+</html>
