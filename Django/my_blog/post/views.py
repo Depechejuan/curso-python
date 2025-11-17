@@ -5,7 +5,7 @@ from .models import Author, Entry
 def update(req):
     author = Author.objects.get(id=1)
     author.name = "Juan"
-    author.email = "depechejuan@gmail.com"
+    author.email = "email@mail.com"
     author.save()
 
     return HttpResponse("Update")
